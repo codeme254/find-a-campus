@@ -1,0 +1,121 @@
+*, *::after, *::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+body{
+  font-size: 1.4rem;
+  font-family: sans-serif;
+}
+
+.search__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.search__button, .search__input{
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border: 2px solid crimson !important;
+}
+
+.search__input, .search__input:focus {
+  border-radius: 5px;
+  margin-right: -.5rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 2px solid crimson!important;
+}
+
+.search__button {
+  background-color: crimson;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.universities__container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  justify-items: center;
+  gap: 2rem;
+}
+
+.university{
+  width: 40rem;
+  padding: 1rem;
+  box-shadow: 1px 1px 5px #666;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.university__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.university__code{
+  padding: .5rem;
+  --size: 5rem;
+  width: var(--size);
+  height: var(--size);
+  min-width: var(--size);
+  background-color: crimson;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.university__name{
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.country__location{
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.3rem;
+}
+
+.campus__link, .campus__link:visited{
+  text-decoration: none;
+  display: block;
+  padding: 1rem 2rem;
+  background-color: crimson;
+  color: white;
+  font-weight: bold;
+  width: max-content;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.guide-text{
+  font-size: 2rem;
+  margin: 2rem auto;
+  text-align: center;
+}
